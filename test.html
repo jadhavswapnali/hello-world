@@ -3,7 +3,14 @@
 
   <body>
     <div ng-app = "myApp" ng-controller = "myCntrl">
-      <select ng-model = "selection" ng-options = "x for x in options"></select>
+	<table border = "0">
+      <tr>
+		<td><select ng-model = "selection" ng-options = "x for x in options"></select></td>
+	  </tr>
+	  <tr>
+		<td><input type = "text"></td><td><button>Submit</button><td>
+	  </tr>
+	</table>
     </div>
     
     <script>
